@@ -1,6 +1,6 @@
 ### 事例简介：
 - 功能简介：使用Python 3版本开发，本demo是在Python 3.8 版本下开发使用。面向对象PC端（PC开发技术 html + css + Js）。 
-- 准备工作：安装 behave 和 selenium 扩展包。 安装命令：
+- 准备工作：selenium需要安装对应浏览器驱动。本demo 是以Chrome 为实例演示。安装 behave 和 selenium 扩展包。 安装命令：
 ```
 pip/pip3 install behave 
 pip/pip3 install selenium 
@@ -8,7 +8,6 @@ pip/pip3 install xlrd
 pip/pip3 install xlwt
 pip/pip3 install xlutils
 ```
-selenium需要安装对应浏览器驱动。本demo 是以Chrome 为实例演示。提供以 Windows操作系统使用 Chrome  浏览器的 安装链接地址：https://blog.csdn.net/JavaLixy/article/details/77874715
 - 知识储备：Python基础知识储备、有对JavaScript、jQuery和第三方js插件相关知识储备、有对某个产品的测试认识、有良好的编写代码逻辑。
 - 命名规则：文件夹及文件命名使用小蛇式命名法。命名字符范围为：a-z 和 ' _ ' 下划线。
 - 参考文档：selenium 的中文文档 https://python-selenium-zh.readthedocs.io/zh_CN/latest/
@@ -20,6 +19,7 @@ selenium需要安装对应浏览器驱动。本demo 是以Chrome 为实例演示
 - 在对应的目录的建立参照注意事项中的目录结构命名情况。behave.ini 和 environment.py 为规定文件命名切勿使用其他名称。文件夹 features 和 steps 为固定命名的文件夹切勿使用其他名称。
 - features文件夹下的文件注意文件格式模板。具体参照注意事项中的xxx.feature 文件内容格式。
 - steps文件夹下的文件注意文件格式模板。具体参照注意事项中的xxx.py 文件内容格式。
+
 ### 二、测试用例简介
 
 - 在对应文件写入对应固定格式模板。
