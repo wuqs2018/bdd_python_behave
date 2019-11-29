@@ -14,7 +14,13 @@ def before_all(context):
     context.url = 'https://at-live-web-h5-develop.atfxdev.com/cn/10000'
      
     # 使用谷歌打开
-    context.driver = webdriver.Chrome()
+    option = webdriver.ChromeOptions()
+    option.add_argument('--no-sandbox')
+    option.add_argument('--disable-dev-shm-usage')
+    option.add_argument('--disable-gpu')
+    option.add_argument('--headless')
+    option.binary_location = r'/opt/google/chrome/chrome'
+    context.driver = webdriver.Chrome(chrome_options=option)
      
     # 加载主函数
     context.common = Common()
